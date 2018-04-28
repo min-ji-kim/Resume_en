@@ -160,6 +160,7 @@ p {
     display: block;
     margin-bottom: 1.3em;
 }
+ 
 
 a {
     color: #0095ff;
@@ -172,7 +173,7 @@ a:hover {
 }
 
 ul {
-    margin-top: 1rem;
+    margin-top: 6px;
 }
 
 li {
@@ -180,6 +181,8 @@ li {
     list-style-position: outside;
     margin-left: 1.3em;
 }
+li.li_sub
+      {list-style-type: none}
 
 .highlights>li>p {
     margin-bottom: 0.5em;
@@ -590,7 +593,6 @@ ul.courses li:hover {
     margin-bottom: .5rem;
 }
 
-
 /****************
 *		TABLET
 ****************/
@@ -600,6 +602,8 @@ ul.courses li:hover {
         width: 80%;
         margin: 0 auto;
     }
+   
+
 }
 
 
@@ -672,7 +676,17 @@ ul.courses li:hover {
         display: block;
     }
 }
+      
+/****************
+*		MOBILE
+****************/
+@media (min-width: 0px) and (max-width:601px) {
+    .p_margin {
+            margin-bottom: 0px;
+    }
+   
 
+}
 @media print {
     #resume {
         margin: 0;
@@ -778,7 +792,7 @@ ul.courses li:hover {
   <div id="resume">
     	<header id="header" class="clear">
     		<div>
-    			<h1 class="name">김민지 [ MINJI KIM ]</h1>
+    			<h1 class="name">MINJI KIM</h1>
     			<h2 class="label"></h2>
     		</div>
     		
@@ -807,6 +821,13 @@ ul.courses li:hover {
     			</div>    			
     			
     		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    			</div>
+    			<div class="item">
+    			</div>
+    		</div>
     	</header>
     
     
@@ -823,7 +844,7 @@ ul.courses li:hover {
     
     			<header>
     				<div class="position">Product Development Team</div>
-    				<div class="company"> Hanjin in KOREA</div>
+    				<div class="company">Hanjin in KOREA</div>
     				<div class="date">
     				  <span class="startDate">July 2015</span> 
     					<span class="endDate">- Current</span>
@@ -831,19 +852,17 @@ ul.courses li:hover {
     			</header>
     			
         	<span class="website">
-        		<a target="_blank" href="https://www.ehanexmall.com">https://www.ehanexmall.com</a>
+        		<a target="_blank" href="http://www.ehanexmall.com">www.ehanexmall.com</a>
+                <br/>
+                Hanjin is a comprehensive logistics group, leading the global logistics industry. eHANEXMall provides service that supports Korean customers who buy products at overseas online shopping mall.
         	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p>Hanjin is a comprehensive logistics group, leading the global logistics industry.<br/>
-				eHANEXMall provides service that supports Korean customers who buy products at overseas online shopping mall.  </p>
-            </div>
+            
             <ul class="highlights">
-                <li><p>Identify and lead the development of eHanexMall platform such as backoffice pages, seller administration pages, product registration pages, and sales settlement pages</p></li>
-                <li><p>Operate eHANEXMall service (coordinating operational issues and improving client satisfaction, Improving quality of service,uploading products,sales settlements)</p></li>
-                <li><p>Recruit and manage vendors </p></li>
-                <li><p>Set up eHANEXMall operating process</p></li>
-				<li><p>Build and maintain relationships with B2B Partner</p></li>
-
+                <li><p>Identified and led the development of eHanexMall platform such as backoffice pages, seller administration pages, product registration pages, and sales settlement pages</p></li>
+                <li><p>Operated eHANEXMall service (coordinating operational issues and improving client satisfaction, Improving quality of service,uploading products,sales settlements)</p></li>
+                <li><p>Recruited and managed vendors</p></li>
+                <li><p>Set up eHANEXMall operating process</p></li>                  
+                <li><p>Built and maintain relationships with B2B Partner </p></li> 
             </ul>
         	</div>
         </section>
@@ -862,16 +881,21 @@ ul.courses li:hover {
     			</header>
     			
         	<span class="website">
-        		<a target="_blank" href="www.equilar.com/">www.equilar.com/</a>
+        		<a target="_blank" href="http://www.equilar.com">www.equilar.com</a>
+                <br/>
+                Equilar is an information services firm, provides a suite of databases, search tools, and research services for making compensation decisions
         	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Equilar is an information services firm, provides a suite of databases, search tools, and research services for making compensation decisions </p></p>
-            </div>
+            
             <ul class="highlights">
                 <li><p>Diagnosed web application problems, report bugs, and suggest enhancements</p></li>
-                <li><p>Responsibilities included functional tests, Oracle database tests, Server check tests</p></li>
-                <li><p>Worked closely with Developers and Product Managers to build and execute test scenarios. </p></li>
-                <li><p>Environment : Postgres/Oracle Database, Linux, Java Selenium, Git, Jenkin, Bugzlia, Apache, Tomcat, Agile</p></li>
+                <li><p>Responsibilities included functional tests, oracle database tests, server check tests
+
+</p></li>
+                <li><p>Worked closely with developers and product managers to build and execute test scenarios.
+
+</p></li>
+                
+                <li><p>Postgres/Oracle Database, Linux, Java Selenium, Git, Jenkin, Bugzlia, Apache, Tomcat</p></li>
             </ul>
         	</div>
         </section>
@@ -885,11 +909,51 @@ ul.courses li:hover {
         <section class="volunteer-item">
             
 		
-    
+        <p class="p_margin"></p>
+          <header>
+            <div class="header-left">
+              <div class="position">              
+                Created a Crypto Price Tracker website
+              </div>
+               <div class="organization">
+                Side Project
+              </div>
+            
+            </div>
+            <div class="date">
+              <span class="startDate">
+              April 2018
+              </span>
+              <span class="endDate">
+              - April 2018
+              </span>
+            </div>
+          </header>         
+          <div class="item">
+		  <div class="summary">
+          </div>
+              <p class="p_margin"></p>
+            <ul class="highlights">
+                <li><p><a target="_blank" href="http://cryptotracker.pythonanywhere.com">http://cryptotracker.pythonanywhere.com</a></p></li>  
+                
+              <li><p>Record purchased coins and information of coins </p></li>    
+              <li><p>Provided for checking KRW and USD coins' price (link with Coinmarketcap API)</p></li>
+              <li><p>Python, Django, Sqlite, Bootstrap, CSS, Html, Pythonanywhere</p></li>
+                
+            </ul>
+          </div>
+        </section>
+          
+          <section class="volunteer-item">
+            
+		
           <header>
             <div class="header-left">
               <div class="position">
                 Created an online portfolio website
+              </div>
+               <div class="organization">
+                Side Project
               </div>
             
             </div>
@@ -901,28 +965,24 @@ ul.courses li:hover {
               - March 2018
               </span>
             </div>
-          </header>
-          <div class="website">
-           
-          </div>
-                  <div class="item">
+          </header>         
+          <div class="item">
 		  <div class="summary">
           </div>
               <p class="p_margin"></p>
             <ul class="highlights">
-              <li><p>Created an online portfolio website   <a target="_blank" href="https://dl.dropboxusercontent.com/s/ssaju9r3g90kbbe/00_Portpolio_Description.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>    
-              <li><p>Designed a KYOBO bookstore microsite    <a target="_blank" href="https://dl.dropbox.com/s/4t70k1kctocrgkp/Microsite_Kyobo.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>
-             <li><p>Designed a League of Legend promotion page  <a target="_blank" href="https://dl.dropbox.com/s/mobc3cr2b1zs8yk/03_WEB_Design_02_LOL_POPUP.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>    
+              <li><p>Created an online portfolio website <a target="_blank" href="https://dl.dropboxusercontent.com/s/ssaju9r3g90kbbe/00_Portpolio_Description.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>    
+              <li><p>Designed a KYOBO bookstore microsite <a target="_blank" href="https://dl.dropbox.com/s/4t70k1kctocrgkp/Microsite_Kyobo.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>
+             <li><p>Designed a League of Legend promotion page <a target="_blank" href="https://dl.dropbox.com/s/mobc3cr2b1zs8yk/03_WEB_Design_02_LOL_POPUP.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>    
               <li><p>Designed a MISSHA promotion page <a target="_blank" href="https://dl.dropbox.com/s/91aijwzwm0ahern/03_WEB_Design_01_Missha_popup.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>             
-              <li><p>Created a Hyundai responsive website   <a target="_blank" href="https://dl.dropboxusercontent.com/s/e8lk975z1y19ky7/04_WEB_Develop_01_Huundai_popup.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>
+              <li><p>Created a Hyundai responsive website <a target="_blank" href="https://dl.dropboxusercontent.com/s/e8lk975z1y19ky7/04_WEB_Develop_01_Huundai_popup.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>
               <li><p>Created a The Association of Korean Intellectual Property responsive website <a target="_blank" href="https://dl.dropbox.com/s/yew636k4whorl7t/04_WEB_Develop_02_한국지식재산권_popup.jpg?dl=0"><span class="fa fa-image"></span></a></p></li>
             </ul>
           </div>
         </section>
+          
+          
         <section class="volunteer-item">
-    
-        
-    
           <header>
             <div class="header-left">
               <div class="position">
@@ -943,12 +1003,18 @@ ul.courses li:hover {
           </header>
           <div class="item">
             <div class="summary">
-              <p><p>Java, Spring Framework, Oracle Database, Bootstrap, CSS, Html, javascript </p></p>
+              
             </div>
+             <p class="p_margin"></p>
             <ul class="highlights">
-              <li><p>Schedule of dates shared by people in a relationship</p></li>
-              <li><p>Provided searching services for popular places and tourist attractions link with google map</p></li>
+                <li><p>Schedule of dates shared by people in a relationship</p></li>
+                <li><p>Provided searching services for popular places and tourist attractions link with google map
+
+</p></li>
               <li><p>Allow postings from users</p></li>
+              <li><p>Java, Spring Framework, Oracle Database, Bootstrap, CSS, Html, javascript
+</p></li>
+
             </ul>
           </div>
         </section>
@@ -974,8 +1040,10 @@ ul.courses li:hover {
             </div>
           </header>
           <div class="item">
+            <p class="p_margin"></p>
             <ul class="highlights">
-              <li><p>Instructed Photoshop, Power-point skills and Korean language education to Vietnamese university students</p></li>
+              <li><p>Instructed Photoshop, Power-point skills and Korean language</p></li>
+              <li><p>education to Vietnamese university students</p></li>
             </ul>
           </div>
         </section>
@@ -985,7 +1053,7 @@ ul.courses li:hover {
           <header>
             <div class="header-left">
               <div class="position">
-                Creative Factory Business club                                                                           
+                Creative Factory business club
               </div>
               <div class="organization">
                 Kookmin University
@@ -1001,10 +1069,11 @@ ul.courses li:hover {
             </div>
           </header>
           <div class="item">
+          <p class="p_margin"></p>
+
             <ul class="highlights">
               <li><p>Designed business activities that making a profit and performed</p></li>
-			  <li><p>Suggested new ideas and marketing strategy in business plan competitions</p></li>
-
+              <li><p>Suggested new ideas and marketing strategy in business plan competitions</p></li>
             </ul>
           </div>
         </section>
@@ -1020,11 +1089,11 @@ ul.courses li:hover {
           <header>
             <div class="header-left">
               <div class="studyType">
-               Management Information System
+                Management Information System 
               </div>
-              
+             
               <div class="institution">
-                Kookmin University                                                                                                    
+                Kookmin University
               </div>
             </div>
             <div class="date">
@@ -1039,12 +1108,12 @@ ul.courses li:hover {
     
     
           <ul class="courses">
-            <li>Object-Oriented Programming</li>
-            <li>Web Programming</li>
-            <li>Management System Analysis and Design</li>
-            <li>Business Database System</li>
-            <li>Financial</li>
-            <li>Marketing</li>
+            <li>object-oriented programming</li>
+            <li>web programming</li>
+            <li>management system analysis and design</li>
+            <li>database</li>
+            <li>finance </li>
+            <li>marketing</li>
             <li>ERP</li>
           </ul>
     
@@ -1076,7 +1145,7 @@ ul.courses li:hover {
     
     
           <ul class="courses">
-            <li>Android Programming</li>
+            <li>android programming</li>
           </ul>
     
           <div class="item">
@@ -1086,7 +1155,7 @@ ul.courses li:hover {
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Certificate <span class="item-count">(5)</span></h2>
+        <h2 class='section-title'>Certification <span class="item-count">(5)</span></h2>
       </header>
       <section id="awards">
         <section class="award-item">
@@ -1094,7 +1163,7 @@ ul.courses li:hover {
           <header>
             <div class="header-left">
               <div class="title">
-                2017 Engineer Information Processing 
+                2017 Engineer Information Processing
               </div>
             </div>
           </header>
@@ -1146,7 +1215,7 @@ ul.courses li:hover {
           <header>
             <div class="header-left">
               <div class="title">
-                2002 word processing
+                2002 word processing 
               </div>
             </div>
           </header>
